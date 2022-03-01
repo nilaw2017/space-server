@@ -1,0 +1,26 @@
+{
+  "collectionName": "components_order_timeline_order_timelines",
+  "info": {
+    "displayName": "Order-Timeline",
+    "icon": "calendar-check",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "ShipmentInfo": {
+      "type": "text",
+      "required": true
+    },
+    "Time": {
+      "type": "date"
+    },
+    "DeliveryProgress": {
+      "type": "enumeration",
+      "enum": [
+        "Order_Placed",
+        "Payment_Pending",
+        "Deported"
+      ]
+    }
+  }
+}

@@ -1,0 +1,17 @@
+{
+  "collectionName": "components_order_details_order_details",
+  "info": {
+    "displayName": "Order-Detail",
+    "icon": "address-card",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "ItemName": {
+      "type": "string"
+    },
+    "Quantity": {
+      "type": "integer"
+    }
+  }
+}

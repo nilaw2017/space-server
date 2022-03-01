@@ -1,0 +1,47 @@
+{
+  "kind": "collectionType",
+  "collectionName": "trackers",
+  "info": {
+    "singularName": "tracker",
+    "pluralName": "trackers",
+    "displayName": "Tracker",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "CustomerName": {
+      "type": "string",
+      "minLength": 3,
+      "required": true
+    },
+    "PhoneNumber": {
+      "type": "biginteger",
+      "required": true,
+      "unique": false
+    },
+    "TrackId": {
+      "type": "string",
+      "unique": true,
+      "maxLength": 10,
+      "minLength": 10
+    },
+    "Address": {
+      "type": "string",
+      "required": true
+    },
+    "OrderDetails": {
+      "displayName": "Order-Detail",
+      "type": "component",
+      "repeatable": true,
+      "component": "order-details.order-detail"
+    },
+    "OrderTimeline": {
+      "type": "component",
+      "repeatable": true,
+      "component": "order-timeline.order-timeline"
+    }
+  }
+}
